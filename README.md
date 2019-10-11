@@ -13,7 +13,9 @@ Import a set of treebanks (for example, from [Vanessa Gorman's](https://history.
 3. From BaseX, open and 
    1. download the XML files from Gorman's repository or [clone](https://help.github.com/en/articles/cloning-a-repository) the repository
    2. run the script [createGrcTBG.xq](https://github.com/nevenjovanovic/explore-treebanks-xquery/blob/master/xq/createGrcTBG.xq)
-   3. alternatively, run the script [createGrcTBGpull.xq](https://github.com/nevenjovanovic/explore-treebanks-xquery/blob/master/xq/createGrcTBGpull.xq), and then [populateGrcTBGfromGit.xq](https://github.com/nevenjovanovic/explore-treebanks-xquery/blob/master/xq/populateGrcTBGfromGit.xq); the second script pulls the files directly from Github and adds them to the database created by the first script
+4. alternatively to 3, without cloning Gorman's repo 
+   1. run the script [createGrcTBGpull.xq](https://github.com/nevenjovanovic/explore-treebanks-xquery/blob/master/xq/createGrcTBGpull.xq),
+   2. then run  [populateGrcTBGfromGit.xq](https://github.com/nevenjovanovic/explore-treebanks-xquery/blob/master/xq/populateGrcTBGfromGit.xq); the second script pulls the files directly from Github and adds them to the database created by the first script (it takes about a minute)
 4. Run other XQuery scripts
 
 # Some basic queries
