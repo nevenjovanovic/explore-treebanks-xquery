@@ -4,18 +4,23 @@
 
 ## Summary
 
-Import a set of treebanks (for example, from Vanessa Gorman's Greek collection) into an XML database, and use XQuery scripts (for example, from BaseX) to analyze the set.
+Import a set of treebanks (for example, from [Vanessa Gorman's](https://history.unl.edu/vanessa-b-gorman) Greek collection, freely available through [Github](https://github.com/vgorman1/Greek-Dependency-Trees/tree/master/xml%20versions) and [Perseids Publications](https://perseids-publications.github.io/gorman-trees/)) into an XML database, and use XQuery scripts (for example, from BaseX) to analyze the set.
 
 ## What do we need
 
 1. Clone this repository
-2. Install BaseX
-3. From BaseX, open and run the script [createGrcTBG.xq]()
+2. Install [BaseX](http://basex.org/)
+3. From BaseX, open and 
+    a. download the XML files from Gorman's repository or clone the repository
+    b. run the script [createGrcTBG.xq](https://github.com/nevenjovanovic/explore-treebanks-xquery/blob/master/xq/createGrcTBG.xq)
+    c. alternatively, run the script [createGrcTBGpull.xq](https://github.com/nevenjovanovic/explore-treebanks-xquery/blob/master/xq/createGrcTBGpull.xq), and then [populateGrcTBGfromGit.xq](https://github.com/nevenjovanovic/explore-treebanks-xquery/blob/master/xq/populateGrcTBGfromGit.xq); the second script pulls the files directly from Github and adds them to the database created by the first script
 4. Run other XQuery scripts
 
 # Some basic queries
 
+# A note on the XML source repositories
 
+[Gorman's Github repo](https://github.com/vgorman1/Greek-Dependency-Trees/tree/master/xml%20versions) and [Perseids Publications](https://perseids-publications.github.io/gorman-trees/) differ slightly in filenames and stability. Gorman's is the working repo, more up to date; Perseids contains more stable versions and might not be synchronized immediately.
 
 # License
 
