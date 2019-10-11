@@ -6,9 +6,9 @@
 
 Import a set of treebanks (for example, from [Vanessa Gorman's](https://history.unl.edu/vanessa-b-gorman) Greek collection, freely available through [Github](https://github.com/vgorman1/Greek-Dependency-Trees/tree/master/xml%20versions) and [Perseids Publications](https://perseids-publications.github.io/gorman-trees/)) into an XML database, and use XQuery scripts (for example, from BaseX) to analyze the set.
 
-## What do we need
+## How to get started
 
-1. Clone this repository
+1. [Clone](https://help.github.com/en/articles/cloning-a-repository) this repository
 2. Install [BaseX](http://basex.org/)
 3. From BaseX, open and 
    1. download the XML files from Gorman's repository or [clone](https://help.github.com/en/articles/cloning-a-repository) the repository
