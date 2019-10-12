@@ -16,9 +16,21 @@ Import a set of treebanks (for example, from [Vanessa Gorman's](https://history.
 4. alternatively to 3, without cloning Gorman's repo 
    1. run the script [createGrcTBGpull.xq](https://github.com/nevenjovanovic/explore-treebanks-xquery/blob/master/xq/createGrcTBGpull.xq),
    2. then run  [populateGrcTBGfromGit.xq](https://github.com/nevenjovanovic/explore-treebanks-xquery/blob/master/xq/populateGrcTBGfromGit.xq); the second script pulls the files directly from Github and adds them to the database created by the first script (it takes about a minute)
-4. Run other XQuery scripts
+4. Run other XQuery scripts (see the [project wiki](https://github.com/nevenjovanovic/explore-treebanks-xquery/wiki))
 
 # Some basic queries
+
+1. retrieve some statistics on the collection and its annotations: 
+   1. how many sentences and words (also excluding punctuation): [GrcTBStatsGeneral.xq](https://github.com/nevenjovanovic/explore-treebanks-xquery/blob/master/xq/GrcTBStatsGeneral.xq)
+   2. how many ellipses, words without annotations or with undefined annotations: [GrcTBStatsGeneral.xq](https://github.com/nevenjovanovic/explore-treebanks-xquery/blob/master/xq/GrcTBStatsGeneral.xq)
+   3. sentences grouped by word count: [GrcTBStatsGeneral.xq](https://github.com/nevenjovanovic/explore-treebanks-xquery/blob/master/xq/GrcTBStatsGeneral.xq)
+   4. how many instances of certain syntactic relations
+   5. how many instances of certain parts of speech
+   6. how many wordforms, how many lemmata
+   7. how many lemmata per parts of speech
+2. retrieve sentences of a certain type, or configuration
+3. retrieve a list of [all parts of speech in a specific syntactic relation]() (what POS can take on the role of subject?)
+4. retrieve a set of [treebank fragments – a specific syntactic relation and all its descendants]() (what is dependent on a subject?)
 
 # A note on the XML source repositories
 
