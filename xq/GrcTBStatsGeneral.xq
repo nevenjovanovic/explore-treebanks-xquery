@@ -40,4 +40,13 @@ declare function local:sentence-words($db){
 };
 
 let $db := "grc-tb-g"
-return ( "# Statistics on Vanessa Gorman's Greek treebank collection, " || fn:current-date() , local:count-texts($db) , local:count-sentences($db) , local:count-words($db) , local:count-words-no-punc($db) , local:count-ellipses($db) , local:count-words-missing-annotation($db) , "# Sentences (S) grouped by word count (W), in descending order" ,"S | W" ,  " ---- | ---- " ,  local:sentence-words($db) )
+return ( 
+"# Statistics on Vanessa Gorman's Greek treebank collection, " || fn:current-date() , 
+local:count-texts($db) , 
+local:count-sentences($db) , 
+local:count-words($db) , 
+local:count-words-no-punc($db) , 
+local:count-ellipses($db) , 
+local:count-words-missing-annotation($db) , 
+"# Sentences (S) grouped by word count (W), in descending order" ,"S | W" ,  " ---- | ---- " ,  
+local:sentence-words($db) )
