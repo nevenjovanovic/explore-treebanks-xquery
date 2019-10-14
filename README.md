@@ -25,7 +25,7 @@ Import a set of treebanks (for example, from [Vanessa Gorman's](https://history.
    2. how many ellipses, words without annotations or with undefined annotations: [GrcTBStatsGeneral.xq](https://github.com/nevenjovanovic/explore-treebanks-xquery/blob/master/xq/GrcTBStatsGeneral.xq)
    3. sentences grouped by word count: [GrcTBStatsGeneral.xq](https://github.com/nevenjovanovic/explore-treebanks-xquery/blob/master/xq/GrcTBStatsGeneral.xq)
    4. how many instances of certain syntactic relations: [GrcTBStatsRelations-1.xq](https://github.com/nevenjovanovic/explore-treebanks-xquery/blob/master/xq/GrcTBStatsRelations-1.xq); current results on a [dedicated wiki page](https://github.com/nevenjovanovic/explore-treebanks-xquery/wiki/StatsRelations)
-   5. how many instances of certain parts of speech
+   5. how many instances of certain parts of speech – how many nouns, verbs, adverbs...?
    6. how many wordforms, how many lemmata
    7. how many lemmata per parts of speech
 2. retrieve sentences of a certain type, or configuration
