@@ -2,11 +2,8 @@
 
 let $db := "grc-tb-g"
 let $result :=
-for $l in distinct-values(
-  collection($db)//*:word[not(@lemma="")]/@lemma/string()
-)
-for $occ in collection($db)//*:word[@lemma=$l]
-let $lemma := $occ/@lemma
+for $occ in collection($db)//*:word/@lemma/string()
+let $lemma := normalize-unicode($occ)
 group by $lemma
 order by count($occ) descending , $lemma collation "?lang=el"
 return ($lemma || " | " || count($occ) )
@@ -16,7 +13,7 @@ return (
 
 Script name: FindLemmata.xq
 ", 
-"Total lemmata: " || $n || "
+"Total lemmata (Unicode NFC normalized): " || $n || "
 ", 
 "Lemma | Count" ,
 " ---- | ---- ",
