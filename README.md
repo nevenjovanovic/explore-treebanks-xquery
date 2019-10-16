@@ -31,6 +31,7 @@ Import a set of treebanks (for example, from [Vanessa Gorman's](https://history.
 2. retrieve sentences of a certain type, or configuration
 3. retrieve a list of all parts of speech in a specific syntactic relation: [FindPOStag.xq](https://github.com/nevenjovanovic/explore-treebanks-xquery/blob/master/xq/FindPOStag.xq); what POS can take on the role of subject? – for example, report for AuxZ, emphasizing particle: [POStagAuxZ](https://github.com/nevenjovanovic/explore-treebanks-xquery/wiki/POStagAuxZ)
 4. retrieve a set of [treebank fragments – a specific syntactic relation and all its descendants]() (what is dependent on a subject?)
+5. transform the "flat" ALDT XML into nested tree structures, as proposed by [Bozia 2018](https://nbn-resolving.org/urn:nbn:de:bsz:15-qucosa2-319358), for easier retrieving of children and parent nodes: [ListToTree.xq](https://github.com/nevenjovanovic/explore-treebanks-xquery/blob/master/xq/ListToTree.xq)
 
 # A note on the XML source repositories
 
