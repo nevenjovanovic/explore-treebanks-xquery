@@ -1,7 +1,7 @@
 (: run this after createGrcTBGTree.xq :)
 (: transform ALDT XML to nested word nodes :)
 (: add transformed trees to database :)
-(: takes about 22sec on 123 files without empty @head attrs :)
+(: takes about 22-25sec on 123 files without empty @head attrs :)
 declare function local:makenode ($nodes, $id, $head, $attrs){
   element word { 
   $id , 
