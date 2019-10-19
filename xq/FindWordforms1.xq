@@ -1,4 +1,5 @@
 (: how many different wordforms in the collection? :)
+(: normalize Unicode characters to NFC :)
 
 let $db := "grc-tb-g"
 let $result :=
