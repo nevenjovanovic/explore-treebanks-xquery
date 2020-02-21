@@ -21,7 +21,7 @@ declare variable $posnames := map {
 let $db := "grc-tb-g"
 (: one or more of PRED SBJ OBJ ATR ADV ATV ATvV PNOM OCOMP COORD APOS MWE AuxP AuxC AuxR AuxV AuxX AuxG AuxK AuxY AuxZ ExD:)
 (: See https://github.com/alpheios-project/arethusa-configs/blob/master/configs/arethusa.relation/relations2.json for explanation :)
-let $relation := "AuxZ"
+let $relation := "SBJ"
 let $result :=
 for $s in collection($db)//*:sentence[not(*:word/@postag=(""))]/*:word[starts-with(@relation,$relation)]
 let $postag := substring($s/@postag/string(), 1, 1)
