@@ -9,7 +9,7 @@ return $occ
 return ( 
 "# Statistics on Vanessa Gorman's Greek treebank collection: lemma " || $query || ", " || fn:current-date()  || "
 
-Script name: FindLemmaSpecific.xq
+Script name: FindLemmataSpecific.xq
 ",
 $result
 )
